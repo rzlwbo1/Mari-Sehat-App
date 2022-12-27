@@ -64,7 +64,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="52dp"
             android:layout_marginEnd="20dp"
-            android:backgroundTint="@color/primary_op"
+            app:cardBackgroundColor="@color/primary_op"
             app:cardCornerRadius="5dp"
             app:contentPaddingBottom="23dp"
             app:contentPaddingLeft="14dp"

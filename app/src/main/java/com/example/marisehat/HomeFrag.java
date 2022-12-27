@@ -64,20 +64,22 @@ public class HomeFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        // Inflate the layout for this fragment
+        view = inflater.inflate(R.layout.fragment_home, container, false);
+
 
         // current date
         LocalDateTime curDate = LocalDateTime.now();
 
         // format
-        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd-MMMM-yyyy");
+        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd MMMM yyyy");
 
         // add to view
-        TextView tanggal = view.findViewById(R.id.date);
-        tanggal.setText(String.valueOf(tanggal));
+        TextView tanggal = (TextView) view.findViewById(R.id.date);
+        String formatedDate = dateFormat.format(curDate);
+        tanggal.setText(formatedDate);
 
 
-
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return view;
     }
 }
