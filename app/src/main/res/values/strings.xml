@@ -9,4 +9,18 @@
     <string name="home">Home</string>
     <string name="profile">Profile</string>
     <string name="weight">Weight</string>
+    <string name="pilih_lokasi">Pilih Lokasi</string>
+    <string name="pilih_spesialisasi">Pilih Spesialisasi</string>
+    <string name="sp_gigi">Sp. Gigi</string>
+    <string name="dokter_n_umum">Dokter\nUmum</string>
+    <string name="sp_anak">Sp. Anak</string>
+    <string name="sp_mata">Sp. Mata</string>
+
+    <array name="location">
+        <item>Jakarta</item>
+        <item>Bekasi</item>
+        <item>Tanggerang</item>
+        <item>Depok</item>
+        <item>Bogor</item>
+    </array>
 </resources>

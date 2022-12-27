@@ -1,14 +1,17 @@
 package com.example.marisehat;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.RequiresApi;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.time.LocalDateTime;
@@ -58,6 +61,7 @@ public class HomeFrag extends Fragment {
 //    }
 
     View view;
+    CardView cardBookDok;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -78,6 +82,16 @@ public class HomeFrag extends Fragment {
         TextView tanggal = (TextView) view.findViewById(R.id.date);
         String formatedDate = dateFormat.format(curDate);
         tanggal.setText(formatedDate);
+
+
+        cardBookDok = view.findViewById(R.id.cardBook);
+        cardBookDok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toBookDok = new Intent(getContext(), Spesialis.class);
+                startActivity(toBookDok);
+            }
+        });
 
 
         return view;
