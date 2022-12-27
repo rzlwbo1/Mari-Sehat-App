@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Mari Sehat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="greeting">Halo, Selamat Datang</string>
+    <string name="booking_dokter">Booking Dokter</string>
+    <string name="artikel_kesehatan">Artikel Kesehatan</string>
+    <string name="nutrisi_makanan">Nutrisi Makanan</string>
 </resources>
