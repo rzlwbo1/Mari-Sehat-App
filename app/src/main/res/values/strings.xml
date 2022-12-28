@@ -16,6 +16,8 @@
     <string name="sp_anak">Sp. Anak</string>
     <string name="sp_mata">Sp. Mata</string>
     <string name="biaya_konsulatasi">Biaya Konsulatasi</string>
+    <string name="menampilkan_list_dokter_gigi">Menampilkan List Dokter Gigi</string>
+    <string name="pilih_dokter">Pilih Dokter</string>
 
     <array name="location">
         <item>Jakarta</item>
@@ -25,7 +27,7 @@
         <item>Bogor</item>
     </array>
 
-    <string-array name="dokter_gigi">
+    <string-array name="dokter_gigi_names">
         <item>drg. Aan Afrianto</item>
         <item>drg. Aan Midad Arrizza</item>
         <item>drg. Abimanyu Bijaksono</item>
@@ -33,14 +35,15 @@
         <item>drg. Ade Chandra</item>
     </string-array>
 
-    <string-array name="rs_name">
+    <string-array name="rs_names">
         <item>RSIA Tambak, Jakpus, Menteng</item>
         <item>RS Medika Permata Hijau, Kebon Jeruk, Jakbar</item>
         <item>Siloam Clinic Sunter, Tanjung priok, Jakut</item>
         <item>RS EMC Pulomas, Pulo Gadung, Jaktim</item>
+        <item>RS EMC Pulomas, Pulo Gadung, Jaktim</item>
     </string-array>
 
-    <string-array name="harga">
+    <string-array name="prices">
         <item>Rp. 50.000</item>
         <item>Rp. 100.000</item>
         <item>Rp. 70.000</item>
