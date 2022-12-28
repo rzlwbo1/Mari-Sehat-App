@@ -14,4 +14,5 @@
     <color name="primary_op2">#E69589</color>
     <color name="secondary">#F5F5F5</color>
     <color name="text_sec">#868686</color>
+    <color name="price_color">#EF472E</color>
 </resources>

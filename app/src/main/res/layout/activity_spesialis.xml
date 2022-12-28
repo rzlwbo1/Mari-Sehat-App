@@ -25,8 +25,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/btnBack"
@@ -57,8 +57,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -108,10 +108,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="112dp"
+            android:layout_height="95dp"
             android:gravity="center_horizontal|center_vertical"
-            android:orientation="horizontal"
-            android:padding="4dp">
+            android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/sp_gigi"
@@ -139,8 +138,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/sp_gigi"
                         android:textColor="@color/text"
-                        android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -172,8 +171,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/dokter_n_umum"
                         android:textColor="@color/text"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -205,8 +204,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/sp_mata"
                         android:textColor="@color/text"
-                        android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -238,8 +237,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/sp_anak"
                         android:textColor="@color/text"
-                        android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
