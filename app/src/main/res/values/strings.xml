@@ -18,6 +18,8 @@
     <string name="biaya_konsulatasi">Biaya Konsulatasi</string>
     <string name="menampilkan_list_dokter_gigi">Menampilkan List Dokter Gigi</string>
     <string name="pilih_dokter">Pilih Dokter</string>
+    <string name="tentukan_jadwal_waktu_booking"><![CDATA[Tentukan Jadwal & Waktu Booking]]></string>
+    <string name="informasi_lainnya">Informasi Lainnya</string>
 
     <array name="location">
         <item>Jakarta</item>
@@ -49,5 +51,68 @@
         <item>Rp. 70.000</item>
         <item>Rp. 80.000</item>
         <item>Rp. 160.000</item>
+    </string-array>
+
+    <string-array name="experiences">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="distance">
+        <item>2.2 km</item>
+        <item>3.5 km</item>
+        <item>4 km</item>
+        <item>9 km</item>
+        <item>4.2 km</item>
+    </string-array>
+
+    <string-array name="date_1">
+        <item>Senin, 10 Februari 2022</item>
+        <item>Selasa, 20 Februari 2022</item>
+        <item>Rabu, 25 Maret 2022</item>
+        <item>Kamis, 09 Maret 2022</item>
+        <item>Jum\'at, 15 Maret 2022</item>
+    </string-array>
+
+    <string-array name="date_2">
+        <item>Rabu, 13 Februari 2022</item>
+        <item>Jum\'at, 23 Februari 2022</item>
+        <item>Kamis, 26 Maret 2022</item>
+        <item>Sabtu,  11 Maret 2022</item>
+        <item>Senin 18 Maret 2022</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>09.00</item>
+        <item>11.00</item>
+        <item>13.00</item>
+        <item>14.00</item>
+        <item>15.00</item>
+    </string-array>
+
+    <string-array name="info_dokter">
+        <item>
+            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
+drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+        </item>
+        <item>
+            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
+drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+        </item>
+        <item>
+            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
+drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+        </item>
+        <item>
+            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
+drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+        </item>
+        <item>
+            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
+drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+        </item>
     </string-array>
 </resources>

@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
-public class Dokter extends AppCompatActivity {
+public class Dokter extends AppCompatActivity implements RecylerViewInterface{
 
     // model buat nampung data dokter
     ArrayList<DokterModel> dokterModels = new ArrayList<>();
@@ -31,7 +31,7 @@ public class Dokter extends AppCompatActivity {
         setDokterModels();
 
         // pastikan adapter setelah set data
-        DokterRecylerViewAdapter adapter = new DokterRecylerViewAdapter(this, dokterModels);
+        DokterRecylerViewAdapter adapter = new DokterRecylerViewAdapter(this, dokterModels, this);
         recyclerViewDokter.setAdapter(adapter);
         recyclerViewDokter.setLayoutManager(new LinearLayoutManager(this));
 
@@ -53,10 +53,30 @@ public class Dokter extends AppCompatActivity {
         String[] dokterNames = getResources().getStringArray(R.array.dokter_gigi_names);
         String[] rsNames = getResources().getStringArray(R.array.rs_names);
         String[] prices = getResources().getStringArray(R.array.prices);
+        String[] experience = getResources().getStringArray(R.array.experiences);
+        String[] distances = getResources().getStringArray(R.array.distance);
+        String[] date_1 = getResources().getStringArray(R.array.date_1);
+        String[] date_2 = getResources().getStringArray(R.array.date_2);
+        String[] times = getResources().getStringArray(R.array.time);
+        String[] desc = getResources().getStringArray(R.array.info_dokter);
 
         // loop buat isi data ke model
         for (int i = 0; i < dokterNames.length; i++) {
-            dokterModels.add(new DokterModel(dokterNames[i], "Dokter Gigi", rsNames[i], prices[i]));
+            dokterModels.add(new DokterModel(dokterNames[i], "Dokter Gigi", rsNames[i], prices[i],
+                    experience[i], distances[i], date_1[i], date_2[i], times[i], desc[i]));
         }
+    }
+
+    @Override
+    public void onClickDokter(int positon) {
+
+        Intent detailDokter = new Intent(Dokter.this, DetailDokter.class);
+
+        detailDokter.putExtra("DOKTOR_NAME", dokterModels.get(positon).getDokterName());
+        detailDokter.putExtra("DATE1", dokterModels.get(positon).getDate_1());
+        detailDokter.putExtra("DATE2", dokterModels.get(positon).getDate_2());
+
+        startActivity(detailDokter);
+
     }
 }
