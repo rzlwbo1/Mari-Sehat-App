@@ -23,6 +23,8 @@
     <string name="isi_biodata_pasien">Isi Biodata Pasien</string>
     <string name="jenis_kelamin">Jenis Kelamin</string>
     <string name="deskripsikan_keluhan">Deskripsikan Keluhan</string>
+    <string name="selamat_kamu_n_berhasil_booking_dokter">Selamat Kamu \n Berhasil Booking Dokter</string>
+    <string name="kembali_ke_beranda">Kembali Ke Beranda</string>
 
     <array name="location">
         <item>Jakarta</item>
