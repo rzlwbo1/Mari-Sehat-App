@@ -1,10 +1,12 @@
 package com.example.marisehat;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
@@ -13,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -62,15 +65,19 @@ public class HomeFrag extends Fragment {
 
     View view;
     CardView cardBookDok;
+    Button btnView;
+
+    DBHelper DB;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        DB = new DBHelper(getContext());
+
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
-
 
         // current date
         LocalDateTime curDate = LocalDateTime.now();
@@ -90,6 +97,42 @@ public class HomeFrag extends Fragment {
             public void onClick(View view) {
                 Intent toBookDok = new Intent(getContext(), Spesialis.class);
                 startActivity(toBookDok);
+            }
+        });
+
+        btnView = view.findViewById(R.id.btnView);
+        btnView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Cursor pasienCursor = DB.getPasien();
+                if (pasienCursor.getCount() == 0) {
+                    Toast.makeText(getContext(), "Belum ada Booking", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+
+                StringBuffer buffer = new StringBuffer();
+                while (pasienCursor.moveToNext()) {
+                    buffer.append("Nama Pasien : " + pasienCursor.getString(1) + "\n");
+                    buffer.append("Jenis Kelamin : " + pasienCursor.getString(2) + "\n");
+                    buffer.append("Usia : " + pasienCursor.getString(3) + "\n");
+                    buffer.append("Keluhan : " + pasienCursor.getString(4) + "\n\n");
+                    buffer.append("Nama Dokter : " + pasienCursor.getString(5) + "\n");
+                    buffer.append("Spesialis : " + pasienCursor.getString(7) + "\n");
+                    buffer.append("Nama RS : " + pasienCursor.getString(6) + "\n\n");
+                    buffer.append("Tanggal Booking : " + pasienCursor.getString(8) + "\n\n");
+                    buffer.append("Waktu : " + pasienCursor.getString(9) + "\n");
+                    buffer.append("Harga : " + pasienCursor.getString(10) + "\n");
+                    buffer.append("================");
+
+                }
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                builder.setCancelable(true);
+                builder.setTitle("Data Booking Dokter");
+                builder.setMessage(buffer.toString());
+                builder.show();
+
             }
         });
 
