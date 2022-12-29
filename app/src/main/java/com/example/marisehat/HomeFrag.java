@@ -123,7 +123,7 @@ public class HomeFrag extends Fragment {
                     buffer.append("Tanggal Booking : " + pasienCursor.getString(8) + "\n\n");
                     buffer.append("Waktu : " + pasienCursor.getString(9) + "\n");
                     buffer.append("Harga : " + pasienCursor.getString(10) + "\n");
-                    buffer.append("================");
+                    buffer.append("================" + "\n\n");
 
                 }
 

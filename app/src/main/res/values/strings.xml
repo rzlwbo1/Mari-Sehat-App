@@ -25,6 +25,7 @@
     <string name="deskripsikan_keluhan">Deskripsikan Keluhan</string>
     <string name="selamat_kamu_n_berhasil_booking_dokter">Selamat Kamu \n Berhasil Booking Dokter</string>
     <string name="kembali_ke_beranda">Kembali Ke Beranda</string>
+    <string name="mari_sehat">Mari Sehat</string>
 
     <array name="location">
         <item>Jakarta</item>
@@ -120,18 +121,10 @@
         <item>
            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
             drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
-            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
-            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
-            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
-            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
-            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
-            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
-            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
-            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
-            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
-            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
-            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
-            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
         </item>
     </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
 </resources>
