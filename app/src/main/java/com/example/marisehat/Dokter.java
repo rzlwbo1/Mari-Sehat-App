@@ -67,16 +67,26 @@ public class Dokter extends AppCompatActivity implements RecylerViewInterface{
         }
     }
 
+
+    // kirim data dari card item rv ke activity baru
     @Override
     public void onClickDokter(int positon) {
 
         Intent detailDokter = new Intent(Dokter.this, DetailDokter.class);
 
         detailDokter.putExtra("DOKTOR_NAME", dokterModels.get(positon).getDokterName());
+        detailDokter.putExtra("SPESIALIS", dokterModels.get(positon).getDokterSp());
+        detailDokter.putExtra("EXPERIENCE", dokterModels.get(positon).getExperience());
+        detailDokter.putExtra("RS_NAME", dokterModels.get(positon).getRsName());
+        detailDokter.putExtra("DISTANCE", dokterModels.get(positon).getDistance());
+        detailDokter.putExtra("PRICE", dokterModels.get(positon).getPriceBooking());
         detailDokter.putExtra("DATE1", dokterModels.get(positon).getDate_1());
         detailDokter.putExtra("DATE2", dokterModels.get(positon).getDate_2());
+        detailDokter.putExtra("TIME", dokterModels.get(positon).getTime());
+        detailDokter.putExtra("DESC", dokterModels.get(positon).getDesc());
 
         startActivity(detailDokter);
+//        finish();
 
     }
 }

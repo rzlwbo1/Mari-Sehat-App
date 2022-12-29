@@ -20,6 +20,9 @@
     <string name="pilih_dokter">Pilih Dokter</string>
     <string name="tentukan_jadwal_waktu_booking"><![CDATA[Tentukan Jadwal & Waktu Booking]]></string>
     <string name="informasi_lainnya">Informasi Lainnya</string>
+    <string name="isi_biodata_pasien">Isi Biodata Pasien</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="deskripsikan_keluhan">Deskripsikan Keluhan</string>
 
     <array name="location">
         <item>Jakarta</item>
@@ -42,7 +45,7 @@
         <item>RS Medika Permata Hijau, Kebon Jeruk, Jakbar</item>
         <item>Siloam Clinic Sunter, Tanjung priok, Jakut</item>
         <item>RS EMC Pulomas, Pulo Gadung, Jaktim</item>
-        <item>RS EMC Pulomas, Pulo Gadung, Jaktim</item>
+        <item>Dent Smile Duren Sawit, Duren Sawit, Jaktim</item>
     </string-array>
 
     <string-array name="prices">
@@ -54,11 +57,11 @@
     </string-array>
 
     <string-array name="experiences">
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>3</item>
-        <item>4</item>
+        <item>2 Tahun</item>
+        <item>3 Tahun</item>
+        <item>4 Tahun</item>
+        <item>3 Tahun</item>
+        <item>4 Tahun</item>
     </string-array>
 
     <string-array name="distance">
@@ -95,24 +98,38 @@
 
     <string-array name="info_dokter">
         <item>
-            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
-drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di RSIA Tambak, Jakpus, Menteng, MDC Dental Care, Quality Dental Care Jatibening.
+            drg. Aan Afrianto mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Gadjah Mada.
+            Beliau yang tergabung dalam Persatuan Dokter Gigi Indonesia (PDGI) sebagai anggota ini bisa memberikan layanan konsultasi terkait Kesehatan Gigi Umum.
         </item>
         <item>
-            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
-drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+            drg. Aan Midad Arrizza adalah Dokter Gigi yang aktif melayani pasien di RS Medika Permata Hijau, Kebon Jeruk, Jakbar.
+            drg. Aan Midad Arrizza mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Indonesia.
         </item>
         <item>
-            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
-drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+            drg. Abimanyu Bijaksono adalah Dokter Gigi yang aktif melayani pasien di Siloam Clinic Sunter, Tanjung priok, Jakut.
+            drg. Abimanyu Bijaksono mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Prof. Dr. Moestopo (Beragama).
         </item>
         <item>
-            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
-drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+            drg. Achmad Fanfani adalah seorang Dokter Gigi Umum yang aktif melayani pasien di RS EMC Pulomas, Pulo Gadung, Jaktim.
+            drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+            Beliau yang tergabung dalam Persatuan Dokter Gigi Indonesia (PDGI)
         </item>
         <item>
-            drg. Aan Afrianto adalah seorang Dokter Gigi Umum yang aktif melayani pasien di MDC Dental Care, Quality Dental Care Jatibening.
-drg. Achmad Fanfani mendapatkan gelar kedokteran gigi setelah menamatkan pendidikan di Universitas Prof. DR. Moestopo (Beragama).
+           drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
+            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
+            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
+            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
+            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
+            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
+            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
+            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
+            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
+            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
+            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
+            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
+            drg. Ade Chandra adalah Dokter Gigi yang aktif melayani pasien di Dent Smile Duren Sawit, Duren Sawit, Jaktim.
+            drg. Ade Chandra mendapatkan gelar Kedokteran Gigi setelah menamatkan pendidikan di Universitas Sumatera Utara.
         </item>
     </string-array>
 </resources>
