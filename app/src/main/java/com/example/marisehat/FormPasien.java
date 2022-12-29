@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class FormPasien extends AppCompatActivity {
 
@@ -21,12 +22,18 @@ public class FormPasien extends AppCompatActivity {
     RadioGroup rgKel;
     RadioButton rbLaki, rbPerem;
     String kelamin;
+    String tempnama, tempspesialis, temprs, temptgl1, temptgl2, temptime, tempharga;
+    String temp;
+
+    DBHelper DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_pasien);
+
+        DB = new DBHelper(this);
 
         nama = findViewById(R.id.etNama);
         usia = findViewById(R.id.etUsia);
@@ -39,6 +46,23 @@ public class FormPasien extends AppCompatActivity {
         nama.addTextChangedListener(validation);
         keluhan.addTextChangedListener(validation);
         usia.addTextChangedListener(validation);
+
+        // data intent
+        String nameDok = getIntent().getStringExtra("DOKTOR_NAME");
+        String spesialis = getIntent().getStringExtra("SPESIALIS");
+        String rsName = getIntent().getStringExtra("RS_NAME");
+        String price = getIntent().getStringExtra("PRICE");
+        String date_1 = getIntent().getStringExtra("DATE1");
+        String date_2 = getIntent().getStringExtra("DATE2");
+        String time = getIntent().getStringExtra("TIME");
+
+        tempnama = nameDok;
+        tempspesialis = spesialis;
+        temprs = rsName;
+        tempharga = price;
+        temptgl1 = date_1;
+        temptgl2 = date_2;
+        temptime = time;
 
 
     }
@@ -62,9 +86,31 @@ public class FormPasien extends AppCompatActivity {
                     btnLanjut.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent toSuccess = new Intent(getApplicationContext(), Succes.class);
-                            startActivity(toSuccess);
-                            finish();
+                            if (rbLaki.isChecked()) {
+                                kelamin = rbLaki.getText().toString();
+                            } else if(rbPerem.isChecked()) {
+                                kelamin = rbPerem.getText().toString();
+                            }
+
+                            if (temptgl1.length() > 0) {
+                                 temp = temptgl1;
+                                System.out.println(temp);
+                            } else {
+                                temp = temptgl2;
+                                System.out.println(temp);
+                            }
+
+                            boolean insertData =DB.insertBookPasien(valnama, kelamin, valusia, valkeluhan, tempnama, temprs, tempspesialis, temp, temptime, tempharga);
+
+                            if (insertData) {
+                                Toast.makeText(FormPasien.this, "Booking Berhasil", Toast.LENGTH_LONG).show();
+
+                                Intent toSuccess = new Intent(getApplicationContext(), Succes.class);
+                                startActivity(toSuccess);
+                                finish();
+                            } else {
+                                Toast.makeText(FormPasien.this, "Booking Gagal", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     });
 

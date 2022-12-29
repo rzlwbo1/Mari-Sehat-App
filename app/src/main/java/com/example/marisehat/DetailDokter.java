@@ -70,6 +70,15 @@ public class DetailDokter extends AppCompatActivity {
             public void onClick(View view) {
                 if (btnBookDok.isEnabled()) {
                     Intent toForm = new Intent(getApplicationContext(), FormPasien.class);
+
+                    toForm.putExtra("DOKTOR_NAME", nameDok);
+                    toForm.putExtra("SPESIALIS", spesialis);
+                    toForm.putExtra("RS_NAME", rsName);
+                    toForm.putExtra("PRICE", price);
+                    toForm.putExtra("DATE1",date_1);
+                    toForm.putExtra("DATE2", date_2);
+                    toForm.putExtra("TIME", time);
+
                     startActivity(toForm);
                 }
             }

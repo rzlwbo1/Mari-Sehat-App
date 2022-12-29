@@ -16,7 +16,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("CREATE TABLE pasien (id_pasien INTEGER PRIMARY KEY, nama VARCHAR(50) NOT NULL, jenkel VARCHAR(10) NOT NULL, usia VARCHAR(10) NOT NULL, keluhan TEXT NOT NULL)");
+        sqLiteDatabase.execSQL("CREATE TABLE pasien (id_pasien INTEGER PRIMARY KEY, nama VARCHAR(50) NOT NULL, jenkel VARCHAR(15) NOT NULL, usia VARCHAR(10) NOT NULL, keluhan TEXT NOT NULL, nama_dokter VARCHAR(80) NOT NULL, nama_rs VARCHAR(50) NOT NULL, spesialis VARCHAR(50) NOT NULL, tanggal VARCHAR(50) NOT NULL, waktu VARCHAR(50) NOT NULL, harga VARCHAR(50) NOT NULL)");
     }
 
     @Override
@@ -25,8 +25,8 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    // insert
-    public boolean insertUserData(String nama, String jenkel, String usia, String keluhan) {
+    // insert pasien
+    public boolean insertBookPasien(String nama, String jenkel, String usia, String keluhan, String namaDok, String namaRS, String spesialis, String tanggal, String waktu, String harga) {
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
@@ -35,9 +35,17 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put("usia", usia);
         contentValues.put("keluhan", keluhan);
 
+        contentValues.put("nama_dokter", namaDok);
+        contentValues.put("nama_rs", namaRS);
+        contentValues.put("spesialis", spesialis);
+        contentValues.put("tanggal", tanggal);
+        contentValues.put("waktu", waktu);
+        contentValues.put("harga", harga);
+
         long res = DB.insert("pasien", null, contentValues);
         return res != -1;
     }
+
 
     // get user
     public Cursor getPasien() {
