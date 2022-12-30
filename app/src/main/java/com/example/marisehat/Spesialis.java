@@ -15,7 +15,7 @@ public class Spesialis extends AppCompatActivity {
 
     ImageButton btnBack;
     Spinner lokasiSpin;
-    CardView sp_umum;
+    CardView sp_gigi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +34,8 @@ public class Spesialis extends AppCompatActivity {
             }
         });
 
-        sp_umum = findViewById(R.id.sp_umum);
-        sp_umum.setOnClickListener(new View.OnClickListener() {
+        sp_gigi = findViewById(R.id.sp_gigi);
+        sp_gigi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent toDokter = new Intent(getApplicationContext(), Dokter.class);

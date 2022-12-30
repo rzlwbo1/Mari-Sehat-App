@@ -126,5 +126,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="cari_tahu_nkalori_makanan_anda">Cari Tahu\nKalori Makanan Anda</string>
+    <string name="masukan_2_makanan_minuman">Masukan 2 makanan / minuman</string>
 
 </resources>

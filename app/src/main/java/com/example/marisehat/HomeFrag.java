@@ -64,7 +64,7 @@ public class HomeFrag extends Fragment {
 //    }
 
     View view;
-    CardView cardBookDok;
+    CardView cardBookDok, cardNutrisi;
     Button btnView;
 
     DBHelper DB;
@@ -99,6 +99,17 @@ public class HomeFrag extends Fragment {
                 startActivity(toBookDok);
             }
         });
+
+
+        cardNutrisi = view.findViewById(R.id.cardNutrisi);
+        cardNutrisi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toKalori = new Intent(getContext(), KaloriFood.class);
+                startActivity(toKalori);
+            }
+        });
+
 
         btnView = view.findViewById(R.id.btnView);
         btnView.setOnClickListener(new View.OnClickListener() {
