@@ -61,10 +61,9 @@ public class HomeSreen extends AppCompatActivity {
                     case R.id.homeItem:
                         replaceFragment(new HomeFrag());
                         break;
-                    case R.id.profileItem:
-                        replaceFragment(new ProfileFrag());
                     case R.id.weightItem:
-                        replaceFragment(new ProfileFrag());
+                        replaceFragment(new BMIFrag());
+                        break;
                 }
                 return true;
             }

@@ -7,12 +7,8 @@
         android:icon="@drawable/home"
         android:title="@string/home" />
     <item
-        android:id="@+id/profileItem"
-        android:enabled="true"
-        android:icon="@drawable/person"
-        android:title="@string/profile" />
-    <item
         android:id="@+id/weightItem"
+        android:enabled="true"
         android:icon="@drawable/weight"
-        android:title="@string/weight" />
+        android:title="@string/bmi" />
 </menu>

@@ -128,5 +128,11 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="cari_tahu_nkalori_makanan_anda">Cari Tahu\nKalori Makanan Anda</string>
     <string name="masukan_2_makanan_minuman">Masukan 2 makanan / minuman</string>
+    <string name="bmi">BMI</string>
+    <string name="bmi_kalkulator">BMI Kalkulator</string>
+    <string name="seberapakah_ideal_tubuh_anda_yo_cek_disini">Seberapakah ideal tubuh anda, yo cek disini</string>
+    <string name="tinggi_badan_m">Tinggi Badan (M)</string>
+    <string name="berat_badan_kg">Berat Badan (Kg)</string>
+    <string name="hitung">Hitung</string>
 
 </resources>

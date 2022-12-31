@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".HomeSreen"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start"
     android:id="@+id/drawlayout">
 
     <com.google.android.material.navigation.NavigationView
@@ -24,7 +23,7 @@
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNav"
             style="bottom"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:itemIconSize="30dp"
             app:itemIconTint="@drawable/bottom_icon_color"
