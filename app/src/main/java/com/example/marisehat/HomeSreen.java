@@ -8,6 +8,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Window;
@@ -36,7 +37,8 @@ public class HomeSreen extends AppCompatActivity {
 
         setSupportActionBar(mytoolbar);
 
-        navigationView.bringToFront();
+        navigationView.bringToFront(); // biar keliatan mana yg di pencet
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, mytoolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
@@ -44,13 +46,30 @@ public class HomeSreen extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()) {
+                    case R.id.nav_home:
+                        replaceFragment(new HomeFrag());
+                        break;
+                    case R.id.nav_bmi:
+                        replaceFragment(new BMIFrag());
+                        break;
+                    case R.id.nav_keluar:
+                        finish();
+                        System.exit(0);
+                        break;
+                }
+                drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             }
         });
 
+        //set mana yg udah ke chekced di menu nav
+        navigationView.setCheckedItem(R.id.nav_home);
+
         ///-------------------------////
 
-        // get botom nav
+        // Bottom Navigation
         BottomNavigationView bottomNav = findViewById(R.id.bottomNav);
         // clicked bottom nav item
         bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {

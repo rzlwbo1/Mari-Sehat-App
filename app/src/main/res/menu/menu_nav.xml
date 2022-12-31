@@ -6,32 +6,21 @@
             android:id="@+id/nav_home"
             android:title="Beranda"
             android:icon="@drawable/ic_baseline_home_24"
+            android:iconTint="@color/primary_op"
             />
 
         <item
-            android:id="@+id/nav_profile"
-            android:title="Profile"
-            android:icon="@drawable/ic_baseline_person_24"
-            />
-
-        <item
-            android:id="@+id/nav_share"
-            android:title="Share"
-            android:icon="@drawable/ic_baseline_share_24"
-            />
-    </group>
-
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_setting"
-            android:title="Settings"
-            android:icon="@drawable/ic_baseline_settings_24"
+            android:id="@+id/nav_bmi"
+            android:title="BMI Kalkulator"
+            android:icon="@drawable/weight"
+            android:iconTint="@color/primary_op"
             />
 
         <item
             android:id="@+id/nav_keluar"
-            android:title="Keluar"
+            android:title="Keluar App"
             android:icon="@drawable/ic_baseline_output_24"
+            android:iconTint="@color/primary_op"
             />
     </group>
 
