@@ -121,28 +121,8 @@ public class HomeFrag extends Fragment {
                     return;
                 }
 
-
-                StringBuffer buffer = new StringBuffer();
-                while (pasienCursor.moveToNext()) {
-                    buffer.append("Nama Pasien : " + pasienCursor.getString(1) + "\n");
-                    buffer.append("Jenis Kelamin : " + pasienCursor.getString(2) + "\n");
-                    buffer.append("Usia : " + pasienCursor.getString(3) + "\n");
-                    buffer.append("Keluhan : " + pasienCursor.getString(4) + "\n\n");
-                    buffer.append("Nama Dokter : " + pasienCursor.getString(5) + "\n");
-                    buffer.append("Spesialis : " + pasienCursor.getString(7) + "\n");
-                    buffer.append("Nama RS : " + pasienCursor.getString(6) + "\n\n");
-                    buffer.append("Tanggal Booking : " + pasienCursor.getString(8) + "\n\n");
-                    buffer.append("Waktu : " + pasienCursor.getString(9) + "\n");
-                    buffer.append("Harga : " + pasienCursor.getString(10) + "\n");
-                    buffer.append("================" + "\n\n");
-
-                }
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                builder.setCancelable(true);
-                builder.setTitle("Data Booking Dokter");
-                builder.setMessage(buffer.toString());
-                builder.show();
+                Intent toListBook = new Intent(getContext(), ListBooking.class);
+                startActivity(toListBook);
 
             }
         });

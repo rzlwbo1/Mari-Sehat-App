@@ -134,5 +134,6 @@
     <string name="tinggi_badan_m">Tinggi Badan (M)</string>
     <string name="berat_badan_kg">Berat Badan (Kg)</string>
     <string name="hitung">Hitung</string>
+    <string name="data_booking_dokter">Data Booking Dokter</string>
 
 </resources>
