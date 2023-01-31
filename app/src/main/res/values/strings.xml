@@ -135,5 +135,6 @@
     <string name="berat_badan_kg">Berat Badan (Kg)</string>
     <string name="hitung">Hitung</string>
     <string name="data_booking_dokter">Data Booking Dokter</string>
+    <string name="artikel_kesehatan_pilihan_nuntuk_kamu">Artikel Kesehatan Pilihan\nUntuk Kamu</string>
 
 </resources>
