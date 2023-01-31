@@ -1,10 +1,13 @@
 package com.example.marisehat;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.Window;
 
+import com.example.marisehat.retrofit.ArticlesItem;
 import com.example.marisehat.retrofit.ListNewsModel;
 
 import java.util.ArrayList;
@@ -19,6 +22,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ListNewsApi extends AppCompatActivity {
 
     private NewsApiService newsApiService;
+    ArrayList<ListNewsModelRecyler> newsModelRecyler = new ArrayList<>();
+    RecyclerView newsRecylerview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +38,11 @@ public class ListNewsApi extends AppCompatActivity {
 
         newsApiService = retrofit.create(NewsApiService.class);
 
+        // get recylerview container
+        newsRecylerview = findViewById(R.id.newsRecyler);
+
         getNewsApi("9be866acf7874f90b3a6d60f9a02a564", "id", "health", 10, "sehat");
+
 
     }
 
@@ -49,6 +58,20 @@ public class ListNewsApi extends AppCompatActivity {
                 if (!response.isSuccessful()) {
                     System.out.println(response.code());
                     return;
+                }
+
+                // loop data ke model baru untuk display data ke adapter
+                for (int i = 0; i < response.body().getArticles().size(); i++) {
+                    newsModelRecyler.add(new ListNewsModelRecyler(response.body().getArticles().get(i).getTitle(),
+                            response.body().getArticles().get(i).getDescription(),
+                            response.body().getArticles().get(i).getUrl(),
+                            response.body().getArticles().get(i).getAuthor()));
+                }
+
+                if (newsModelRecyler.size() == 10) {
+                    ListNewsAdapter adapterNews = new ListNewsAdapter(getApplicationContext(), newsModelRecyler);
+                    newsRecylerview.setAdapter(adapterNews);
+                    newsRecylerview.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                 }
 
 
