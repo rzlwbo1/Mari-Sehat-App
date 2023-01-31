@@ -2,7 +2,6 @@ package com.example.marisehat;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -14,6 +13,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.example.marisehat.helper.DBHelper;
 
 public class FormPasien extends AppCompatActivity {
 

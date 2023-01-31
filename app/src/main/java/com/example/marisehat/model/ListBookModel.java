@@ -1,4 +1,4 @@
-package com.example.marisehat;
+package com.example.marisehat.model;
 
 public class ListBookModel {
 

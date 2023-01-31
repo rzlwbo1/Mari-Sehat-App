@@ -8,11 +8,12 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Window;
 
+import com.example.marisehat.fragments.BMIFrag;
+import com.example.marisehat.fragments.HomeFrag;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;

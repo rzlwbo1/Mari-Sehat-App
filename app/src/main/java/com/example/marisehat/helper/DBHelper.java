@@ -1,4 +1,4 @@
-package com.example.marisehat;
+package com.example.marisehat.helper;
 
 import android.content.ContentValues;
 import android.content.Context;

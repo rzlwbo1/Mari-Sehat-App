@@ -1,4 +1,4 @@
-package com.example.marisehat;
+package com.example.marisehat.retrofit;
 
 import com.example.marisehat.retrofit.ListNewsModel;
 

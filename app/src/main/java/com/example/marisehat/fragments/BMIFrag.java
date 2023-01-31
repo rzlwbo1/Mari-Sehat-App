@@ -1,4 +1,4 @@
-package com.example.marisehat;
+package com.example.marisehat.fragments;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.marisehat.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class BMIFrag extends Fragment {

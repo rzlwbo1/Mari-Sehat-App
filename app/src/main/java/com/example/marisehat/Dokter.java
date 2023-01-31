@@ -8,12 +8,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.example.marisehat.adapter.DokterRecylerViewAdapter;
+import com.example.marisehat.helper.RecylerViewInterface;
+import com.example.marisehat.model.DokterModel;
 
 import java.util.ArrayList;
 
-public class Dokter extends AppCompatActivity implements RecylerViewInterface{
+public class Dokter extends AppCompatActivity implements RecylerViewInterface {
 
     // model buat nampung data dokter
     ArrayList<DokterModel> dokterModels = new ArrayList<>();

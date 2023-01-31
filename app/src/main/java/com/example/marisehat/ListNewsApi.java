@@ -7,11 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.Window;
 
-import com.example.marisehat.retrofit.ArticlesItem;
+import com.example.marisehat.adapter.ListNewsAdapter;
+import com.example.marisehat.model.ListNewsModelRecyler;
 import com.example.marisehat.retrofit.ListNewsModel;
+import com.example.marisehat.retrofit.NewsApiService;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;

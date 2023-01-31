@@ -1,4 +1,4 @@
-package com.example.marisehat;
+package com.example.marisehat.fragments;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -6,7 +6,6 @@ import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AlertDialog;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
@@ -16,6 +15,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.marisehat.helper.DBHelper;
+import com.example.marisehat.KaloriFood;
+import com.example.marisehat.ListBooking;
+import com.example.marisehat.ListNewsApi;
+import com.example.marisehat.R;
+import com.example.marisehat.Spesialis;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
