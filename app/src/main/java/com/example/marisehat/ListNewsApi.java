@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Window;
 
 import com.example.marisehat.adapter.ListNewsAdapter;
+import com.example.marisehat.helper.ReadOnClickInterface;
 import com.example.marisehat.model.ListNewsModelRecyler;
 import com.example.marisehat.retrofit.ListNewsModel;
 import com.example.marisehat.retrofit.NewsApiService;
@@ -69,8 +72,18 @@ public class ListNewsApi extends AppCompatActivity {
                             response.body().getArticles().get(i).getAuthor()));
                 }
 
+
+                // set data to adapter recyclerview
                 if (newsModelRecyler.size() == 10) {
-                    ListNewsAdapter adapterNews = new ListNewsAdapter(getApplicationContext(), newsModelRecyler);
+                    ListNewsAdapter adapterNews = new ListNewsAdapter(getApplicationContext(), newsModelRecyler, new ReadOnClickInterface() {
+                        @Override
+                        public void onClickBtnArtickle(int position) {
+                            // open web browser
+                            Uri webpage = Uri.parse(newsModelRecyler.get(position).getUrl());
+                            Intent toChrome = new Intent(Intent.ACTION_VIEW, webpage);
+                            startActivity(toChrome);
+                        }
+                    });
                     newsRecylerview.setAdapter(adapterNews);
                     newsRecylerview.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                 }
@@ -80,9 +93,11 @@ public class ListNewsApi extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ListNewsModel> call, Throwable t) {
-
+                System.out.println(t.getMessage());
             }
         });
 
     }
+
+
 }
