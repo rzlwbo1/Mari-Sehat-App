@@ -49,7 +49,7 @@ public class ListBooking extends AppCompatActivity {
         } else {
 
             while (cursor.moveToNext()) {
-                listBookModels.add(new ListBookModel(cursor.getString(1), cursor.getString(2), cursor.getString(3),
+                listBookModels.add(new ListBookModel(cursor.getString(1), cursor.getString(2), cursor.getString(3).concat(" Tahun"),
                         cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7),
                         cursor.getString(8), cursor.getString(9), cursor.getString(10)));
             }
